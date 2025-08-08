@@ -1,0 +1,8 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+1. Always read [README.md] and update it if relevant after your changes. Keep all module/directory-level README file links in the main [README.md]
+2. Always create/update README files in each top level folder or module
+3. Don't use deprecated typing please check here https://docs.python.org/3/library/typing.html#deprecated-aliases

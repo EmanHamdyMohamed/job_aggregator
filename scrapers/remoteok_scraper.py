@@ -40,7 +40,8 @@ def get_remoteok_jobs(keyword=None):
             "title": title_elem.get_text(strip=True),
             "company": company_elem.get_text(strip=True),
             "location": location_elem.get_text(strip=True),
-            "salary": salary_elem.get_text(strip=True) if salary_elem else 'Unknown',
+            "salary": (salary_elem.get_text(strip=True)
+                       if salary_elem else 'Unknown'),
             "tags": [t.get_text(strip=True) for t in tags_elem],
             "date_posted": date_elem["datetime"] if date_elem else None,
             "link": (f"https://remoteok.com{link_elem['href']}" 
